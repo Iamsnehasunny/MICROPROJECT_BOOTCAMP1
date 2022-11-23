@@ -1,0 +1,121 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminLogPage.master.cs" Inherits="COMPLAINBOX.ADMIN.AdminLogPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+     <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+        body,h1 {font-family: "Raleway", sans-serif}
+        body, html {height: 100%}
+        .bgimg {
+  background-image: url('../USER/IMGZZZ/G2.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a, .dropbtn {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+
+    li.dropdown {
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+</style>
+
+
+
+                        <nav>
+                        <ul>
+                        <li><a href="AdminLogPage.aspx">HOME</a></li>
+
+                        <li><a href="../GUEST/GuestLogin.aspx">ABOUT</a></li>
+                        <li ><a href="ProductReg.aspx">PRODUCT REGISTRATION</a></li>
+                        <li class="dropdown">
+                              <div>
+                              <a href="javascript:void(0)" class="dropbtn">VIEW</a>
+                              <div class="dropdown-content">
+                              <a href="UserView.aspx">View User</a>
+                              <a href="Productviewadmin.aspx">View Product</a>
+                              <a href="ViewComplaint.aspx">View Complaint</a>
+                              <a href="ViewQery.aspx">View Query</a>
+                              <a href="Replay.aspx">Give Replay</a>
+                              
+                              </div>
+                              </div>
+                        </li>
+                        <li style="float:right"><a href="../GUEST/GuestLogin.aspx">LOGOUT</a></li>
+                        </ul>
+                    </nav>
+  
+     <div class="w3-display-middle">
+        <h1 class="w3-jumbo w3-animate-top">Hey! Welcome BR Products</h1>
+        <hr class="w3-border-grey" style="margin:auto;width:40%">
+        <p class="w3-large w3-center">Your Fevorite Product Hub</p>
+     </div>
+         <br />
+      <br />
+             <div class="w3-display-bottomleft w3-padding-large">
+                Powered by BR Products @ India
+             </div>
+</div>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder id="stylesheet" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

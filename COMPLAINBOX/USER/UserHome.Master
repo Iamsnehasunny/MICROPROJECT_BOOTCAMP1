@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserHome.master.cs" Inherits="COMPLAINBOX.USER.UserHome" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+     
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+     <style>
+         body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('../ADMIN/IMGZZ/G2.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+         </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder id="stylesheet" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="UserHome.aspx" class="w3-bar-item w3-button"><b>BR</b> Products</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+        <a href="Complaintregistration.aspx" class="w3-bar-item w3-button">Complaint Box</a>
+        <a href="Qeryreg.aspx" class="w3-bar-item w3-button">Ask Query</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="GuestLogin.aspx" class="w3-bar-item w3-button">Logout</a>
+        
+    </div>
+  </div>
+</div>
+
+
+    
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+ 
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">Hey! Welcome BR Products</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">Your Fevorite Product Hub</p>
+  </div>
+         <br />
+      <br />
+      
+  <div class="w3-display-bottomleft w3-padding-large">
+    Powered by BR Products @ India
+  </div>
+</div>
+</body>
+</html>
